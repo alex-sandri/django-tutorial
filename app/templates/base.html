@@ -1,0 +1,63 @@
+<!-- Extends default Bootstrap Italia template -->
+{% extends 'bootstrap-italia-base.html' %}
+
+{% load static %}
+
+<!-- Page Title -->
+{% block page_title %}
+Tutorial
+{% endblock page_title %}
+
+<!-- My custom scss sheet -->
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+{% endblock extra_head %}
+
+<!-- URL link top left -->
+{% block header_slim_org_url %}
+https://alexsandri.com
+{% endblock header_slim_org_url %}
+
+<!-- Name top left -->
+{% block header_slim_org_name %}
+Tutorial
+{% endblock header_slim_org_name %}
+
+<!-- Mobile slim_org_name -->
+{% block header_slim_mobile_org_name %}
+Tutorial
+{% endblock header_slim_mobile_org_name %}
+
+<!-- Make empty areas -->
+{% block header_mobile_arrow %}{% endblock header_mobile_arrow %}
+{% block header_mobile_slim_menu %}{% endblock header_mobile_slim_menu %}
+
+<!-- Logo in Header -->
+{% block header_center_logo %}
+<img class="icon" src="{% static 'images/logo.png' %}" />
+{% endblock header_center_logo %}
+
+<!-- Organization name in Header -->
+{% block header_center_org_name %}
+Tutorial
+{% endblock header_center_org_name %}
+
+<!-- Organization description in Header -->
+{% block header_center_org_subname %}
+Tutorial
+{% endblock header_center_org_subname %}
+
+<!-- Logo in Footer -->
+{% block footer_logo %}
+<img class="icon" src="{% static 'images/logo_white.png' %}" />
+{% endblock footer_logo %}
+
+<!-- Organization name in Footer -->
+{% block footer_org_name %}
+Tutorial
+{% endblock footer_org_name %}
+
+<!-- Organization name in Footer -->
+{% block footer_org_subname %}
+Tutorial
+{% endblock footer_org_subname %}
